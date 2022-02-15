@@ -1,3 +1,10 @@
+import {
+  sage,
+  gray,
+  sageDark,
+  grayDark
+} from '@radix-ui/colors';
+
 import { createStitches } from '@stitches/react'
 
 export const {
@@ -11,50 +18,46 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      hiContrast: 'hsl(206,10%,5%)',
-      loContrast: 'white',
-
-      gray100: 'hsl(206,22%,99%)',
-      gray200: 'hsl(206,12%,97%)',
-      gray300: 'hsl(206,11%,92%)',
-      gray400: 'hsl(206,10%,84%)',
-      gray500: 'hsl(206,10%,76%)',
-      gray600: 'hsl(206,10%,44%)',
-
-      purple100: 'hsl(252,100%,99%)',
-      purple200: 'hsl(252,100%,98%)',
-      purple300: 'hsl(252,100%,94%)',
-      purple400: 'hsl(252,75%,84%)',
-      purple500: 'hsl(252,78%,60%)',
-      purple600: 'hsl(252,80%,53%)',
+      ...sage,
+      ...gray,
+      line: '$gray7',
     },
     space: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-      4: '20px',
-      5: '25px',
-      6: '35px',
+      1: '0.5rem',
+      2: '1rem',
+      3: '1.5rem',
+      4: '2rem',
+      5: '2.5rem',
+      6: '3rem',
     },
     sizes: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-      4: '20px',
-      5: '25px',
-      6: '35px',
+      1: '0.5rem',
+      2: '1rem',
+      3: '1.5rem',
+      4: '2rem',
+      5: '2.5rem',
+      6: '3rem',
     },
     fontSizes: {
-      1: '12px',
-      2: '13px',
-      3: '15px',
-      4: '17px',
-      5: '19px',
-      6: '21px',
+      xs: "0.625rem",
+      sm: "0.75rem",
+      md: "1rem",
+      lg: "1.25rem",
+      xl: "1.5rem",
+      xxl: "2rem",
+    },
+    lineHeights: {
+      1: '0.5rem',
+      2: '1rem',
+      3: '1.5rem',
+      4: '2rem',
+      5: '2.5rem',
+      6: '3rem',
     },
     fonts: {
-      system: 'system-ui',
-    },
+      logo: 'Fira Code, monospace',
+      mavenPro: 'Maven Pro, sans-serif',
+    }
   },
   utils: {
     marginX: (value) => ({
@@ -75,7 +78,29 @@ export const {
     }),
   },
   media: {
-    bp1: '(min-width: 520px)',
-    bp2: '(min-width: 900px)',
+    bp1: '(min-width: 740px)',
+    bp2: '(min-width: 1080px)',
   },
+
 })
+
+export const lightTheme = createTheme({
+	colors: {
+    ...sage,
+    ...gray,
+  }
+})
+
+export const darkTheme = createTheme({
+	colors: {
+    ...sageDark,
+    ...grayDark,
+  }
+})
+
+export const globalStyles = globalCss({
+  '*': { margin: 0, padding: 0 },
+  "body": {
+    fontFamily: "$mavenPro",
+  }
+});
