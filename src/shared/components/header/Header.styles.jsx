@@ -1,69 +1,55 @@
 import { styled } from '../../../../stitches.config';
+import * as SeparatorPrimitive from '@radix-ui/react-separator';
 
 export const StyledHeader = styled('header', {
   marginX: 'auto',
   marginBottom: '$6',
   paddingY: '$2',
-  fontFamily: '$logo',
-  fontSize: '$md',
-});
-
-export const Nav = styled('nav', {});
-
-export const List = styled('ul', {
-  display: 'flex',
-  listStyle: 'none',
-});
-
-export const ListItem = styled('li', {
-  marginRight: '$2',
 });
 
 export const StyledLink = styled('a', {
-  display: 'block',
-  paddingY: '$2',
-  paddingX: '$2',
-  borderBottom: '1px solid $line',
-  cursor: 'pointer',
+  all: 'unset',
+  flex: '0 0 auto',
+  padding: '0 5px',
+  color: '$mauve1',
+  display: 'inline-flex',
+  width: '$5',
+  height: '$5',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: '$1',
   transition: 'all .3s',
+  borderRadius: '$2',
 
-  '&:hover': {
-    backgroundColor: '$sage5',
+  '& svg path': {
+    color: '$mauve12',
   },
 
-  '&.active': {
-    backgroundColor: '$sage6',
+  '&:hover, &.active': {
+    backgroundColor: '$violet12',
+    color: '$violet1',
+    cursor: 'pointer',
+
+    '& svg path': {
+      color: '$violet1',
+    },
   },
+
+  '&:focus': { position: 'relative', boxShadow: '0 0 0 2px black' },
+});
+
+export const Nav = styled('nav', {
+  display: 'flex',
+});
+
+export const List = styled('ul', {
+  listStyle: 'none',
+  display: 'flex',
 });
 
 export const Box = styled('div', {
-  display: 'flex;',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-});
-
-export const ThemeMenu = styled('menu', {
-  paddingY: '$2',
-});
-
-export const MenuList = styled('ul', {
   display: 'flex',
-  listStyle: 'none',
-});
-
-export const MenuListItem = styled('li', {
-  marginLeft: '$1',
-});
-
-export const ButtonTheme = styled('button', {
-  display: 'block',
-  width: '$4',
-  height: '$4',
-  border: 'none',
-  background: 'none',
-  cursor: 'pointer',
-
-  '& svg path': {
-    fill: '$gray12',
-  },
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  marginBottom: '$4',
 });

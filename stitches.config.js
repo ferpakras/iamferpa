@@ -1,8 +1,12 @@
 import {
   sage,
   gray,
+  violet,
+  mauve,
   sageDark,
-  grayDark
+  grayDark,
+  violetDark,
+  mauveDark
 } from '@radix-ui/colors';
 
 import { createStitches } from '@stitches/react'
@@ -18,8 +22,6 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...sage,
-      ...gray,
       line: '$gray7',
     },
     space: {
@@ -29,6 +31,7 @@ export const {
       4: '2rem',
       5: '2.5rem',
       6: '3rem',
+      7: '5rem',
     },
     sizes: {
       1: '0.5rem',
@@ -37,6 +40,13 @@ export const {
       4: '2rem',
       5: '2.5rem',
       6: '3rem',
+    },
+    radii: {
+      1: "0px",
+      2: "4px",
+      3: "6px",
+      4: "16px",
+      5: "50px"
     },
     fontSizes: {
       xs: "0.625rem",
@@ -57,7 +67,12 @@ export const {
     fonts: {
       logo: 'Fira Code, monospace',
       mavenPro: 'Maven Pro, sans-serif',
-    }
+    },
+    shadows: {
+      ...sage,
+      ...gray,
+      ...mauve,
+    },
   },
   utils: {
     marginX: (value) => ({
@@ -88,6 +103,8 @@ export const lightTheme = createTheme({
 	colors: {
     ...sage,
     ...gray,
+    ...violet,
+    ...mauve,
   }
 })
 
@@ -95,6 +112,8 @@ export const darkTheme = createTheme({
 	colors: {
     ...sageDark,
     ...grayDark,
+    ...violetDark,
+    ...mauveDark,
   }
 })
 

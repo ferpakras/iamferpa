@@ -6,7 +6,7 @@ const MainStateContext = React.createContext();
 
 const MainDispatchContext = React.createContext();
 
-const STORAGE_KEY = 'WorldNews.Front';
+const STORAGE_KEY = 'IAmFerpa.Front';
 
 const initialState = {
   theme: {
