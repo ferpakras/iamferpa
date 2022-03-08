@@ -63,15 +63,13 @@ const Header = () => {
             </S.StyledLink>
           </li>
           <li>
-            <Link
+            <S.StyledLink
               href="https://instagram.com/iamferpah"
               title="veja meu perfil no instagram"
               target="_blank"
             >
-              <S.StyledLink>
-                <InstagramLogoIcon />
-              </S.StyledLink>
-            </Link>
+              <InstagramLogoIcon />
+            </S.StyledLink>
           </li>
         </S.List>
       </S.Nav>

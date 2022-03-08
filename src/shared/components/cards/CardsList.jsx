@@ -4,7 +4,6 @@ import Card from './Card';
 const List = styled('ul', {
   display: 'flex',
   flexWrap: 'wrap',
-  justifyContent: 'space-between',
   listStyle: 'none',
 });
 

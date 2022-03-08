@@ -1,14 +1,21 @@
 import Head from 'next/head';
-import { Text } from '../shared/components/text/Text';
-import { styled } from '../../stitches.config';
-import Layout from './_layout';
+import { Text } from '../../shared/components/text/Text';
+import { styled } from '../../../stitches.config';
+import Layout from '../_layout';
 
-const Box = styled('div', {});
+const Box = styled('div', {
+  marginBottom: '$4',
+});
 
 const Link = styled('a', {
   fontFamily: '$system',
   textDecoration: 'none',
-  color: '$purple600',
+  color: '$violet10',
+  transition: 'all .2s',
+
+  '&:hover': {
+    color: '$violet8',
+  },
 });
 
 export default function Artigos() {
@@ -17,6 +24,17 @@ export default function Artigos() {
       <Head>
         <title>hello, i am ferpa. - pare de se comparar</title>
       </Head>
+
+      <Box>
+        <Link href="/artigos" title="Go back to artigos page">
+          <a>
+            <em>
+              ...voltar para <strong>página de /artigos</strong>
+            </em>
+          </a>
+        </Link>
+      </Box>
+
       <Text as="h1">pare de se comparar</Text>
 
       <Text>

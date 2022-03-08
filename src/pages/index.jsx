@@ -46,6 +46,13 @@ export default function Home() {
               linkTitle: 'clique para ler o artigo pare de se comparar',
               date: 'Fev, 2022',
             },
+            {
+              title: 'já se sentiu desvalorizado?',
+              description: 'parece que não estou sendo reconhecido',
+              href: '/artigos/ja-se-sentiu-desvalorizado',
+              linkTitle: 'clique para ler o artigo sobre se sentir desvalorizado',
+              date: 'Mar, 2022',
+            },
           ]}
         />
       </Box>
