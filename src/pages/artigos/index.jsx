@@ -30,10 +30,17 @@ export default function Artigos() {
             date: 'Fev, 2022',
           },
           {
-            title: 'já se sentiu desvalorizado?',
+            title: 'já se sentiu uma pessoa desvalorizada?',
             description: 'parece que não estou sendo reconhecido',
-            href: '/artigos/ja-se-sentiu-desvalorizado',
+            href: '/artigos/ja-se-sentiu-uma-pessoa-desvalorizada',
             linkTitle: 'clique para ler o artigo sobre se sentir desvalorizado',
+            date: 'Mar, 2022',
+          },
+          {
+            title: 'os chamados soft skills',
+            description: 'já ouviu esse termo, né? o que são soft skills?',
+            href: '/artigos/os-chamados-softskills',
+            linkTitle: 'clique para ler o artigo sobre soft skills',
             date: 'Mar, 2022',
           },
         ]}

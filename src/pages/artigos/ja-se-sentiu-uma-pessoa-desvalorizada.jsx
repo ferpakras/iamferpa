@@ -23,7 +23,7 @@ export default function Artigos() {
   return (
     <Layout>
       <Head>
-        <title>hello, i am ferpa. - já se sentiu desvalorizado?</title>
+        <title>hello, i am ferpa. - já se sentiu uma pessoa desvalorizada?</title>
       </Head>
 
       <Box>
@@ -36,7 +36,7 @@ export default function Artigos() {
         </Link>
       </Box>
 
-      <Text as="h1">já se sentiu desvalorizado?</Text>
+      <Text as="h1">já se sentiu uma pessoa desvalorizada?</Text>
       <Text as="h2">o poder da expectativa...</Text>
 
       <Text>
